@@ -1,0 +1,16 @@
+{
+    "name": "fusion_machines",
+    "version": "0.1.3",
+    "title": "Fusion Machines",
+    "author": "Talandar",
+    "dependencies": [
+        "base >= 2.0",
+        "space-age",
+        "? autofuel",
+        "? skewer_planet_vesta"
+    ],
+    "description": "Machines with fusion reactors at their core, built for extreme endgame production.",
+    "factorio_version": "2.0",
+    "space_travel_required": true,
+    "spoiling_required": true
+}
