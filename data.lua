@@ -1,6 +1,5 @@
 if settings.startup["fusion-assembling-machine"].value then
 	require("fusion-assembling-machine")
-
 	data:extend({
 		{
 			type = "technology",
