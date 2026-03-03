@@ -66,3 +66,19 @@ if settings.startup["refillable-fusion-reactor-equipment"].value then
 	}
 	data.raw["generator-equipment"]["fusion-reactor-equipment"].power = "5MW"
 end
+
+if settings.startup["fusion-reactor-and-generator-buff"].value then
+	data.raw["fusion-generator"]["fusion-generator"].energy_source.output_flow_limit = "100MW"
+	data.raw["fusion-generator"]["fusion-generator"].max_fluid_usage = 4 / second -- at normal quality
+	data.raw["fusion-reactor"]["fusion-reactor"].max_fluid_usage = 8 / second -- at normal quality
+end
+if settings.startup["fusion-fuel-cell-buff"].value then
+	for _, item in pairs(data.raw.item) do
+		if item.fuel_category ~= nil then
+			if item.fuel_category == "fusion" then
+				local fuel_value = (util.parse_energy(item.fuel_value) * 2) / 1000000
+				item.fuel_value = (tostring(fuel_value) .. "MJ")
+			end
+		end
+	end
+end

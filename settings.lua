@@ -20,6 +20,21 @@ data:extend({
 		default_value = true,
 		order = "fusion_machines-c",
 	},
+
+	{
+		type = "bool-setting",
+		name = "fusion-reactor-and-generator-buff",
+		setting_type = "startup",
+		default_value = true,
+		order = "fusion_machines-d",
+	},
+	{
+		type = "bool-setting",
+		name = "fusion-fuel-cell-buff",
+		setting_type = "startup",
+		default_value = true,
+		order = "fusion_machines-e",
+	},
 })
 
 if mods["skewer_planet_vesta"] then

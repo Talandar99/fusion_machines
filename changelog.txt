@@ -1,4 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.2.0
+Date: 2026-03-03
+  Balancing:
+    - changed fusion assembling machine power usage (5MW -> 8MW)
+    - fusion generator now can generate more power (50MJ -> 100MJ)
+    - fusion reactor now can generate more plasma which result in more power (100MJ -> 200MJ)
+    - all fusion fuel cells are now twice as strong as before. 
+    - fusion power buff and fuel cell buff can be disabled in settings
+---------------------------------------------------------------------------------------------------
 Version: 0.1.3
 Date: 2026-02-11
   Bugfix:
